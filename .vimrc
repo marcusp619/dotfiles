@@ -13,16 +13,22 @@ call plug#begin()
 	" Typescript Syntax 
 	Plug 'leafgarland/typescript-vim'
   Plug 'ianks/vim-tsx'
-	" Liner
-	 Plug 'w0rp/ale'
+	" Linter
+  Plug 'w0rp/ale'
+  " Bind vim controls to tmux
+  Plug 'christoomey/vim-tmux-navigator'
+  " Git wrapper
+  Plug 'tpope/vim-fugitive'
 
 call plug#end()
 
 " JSDocs syntax
 let g:javascript_plugin_jsdoc = 1
 
+" Set Relativenumber
+:set relativenumber
+
 " Turing on color scheme
-set t_Co=256
 syntax on
 colorscheme abstract 
 
