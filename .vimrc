@@ -19,6 +19,10 @@ call plug#begin()
   Plug 'christoomey/vim-tmux-navigator'
   " Git wrapper
   Plug 'tpope/vim-fugitive'
+  " Tmux mapper
+  Plug 'christoomey/vim-tmux-navigator'
+  " Go dev
+  Plug 'fatih/vim-go'
 
 call plug#end()
 
