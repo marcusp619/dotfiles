@@ -14,7 +14,7 @@ call plug#begin()
 	Plug 'leafgarland/typescript-vim'
   Plug 'ianks/vim-tsx'
 	" Linter
-  Plug 'w0rp/ale'
+  Plug 'dense-analysis/ale'
   " Bind vim controls to tmux
   Plug 'christoomey/vim-tmux-navigator'
   " Git wrapper
@@ -23,6 +23,8 @@ call plug#begin()
   Plug 'christoomey/vim-tmux-navigator'
   " Go dev
   Plug 'fatih/vim-go'
+  " Nerdtree
+  Plug 'preservim/nerdtree'
 
 call plug#end()
 
@@ -80,6 +82,9 @@ set shortmess+=c
 
 " always show signcolumns
 set signcolumn=yes
+
+" NERDTree plugin specific commands
+:nnoremap <C-g> :NERDTreeToggle<CR>
 
 " Use tab for trigger completion with characters ahead and navigate.
 " Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
